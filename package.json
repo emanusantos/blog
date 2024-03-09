@@ -17,6 +17,7 @@
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "8.56.0",
 		"@types/node": "^20.11.25",
+		"@types/showdown": "^2.0.6",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"autoprefixer": "^10.4.17",
@@ -36,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"gray-matter": "^4.0.3"
+		"gray-matter": "^4.0.3",
+		"showdown": "^2.1.0"
 	}
 }

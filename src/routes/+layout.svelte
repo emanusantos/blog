@@ -3,7 +3,9 @@
 </script>
 
 <div class="flex min-h-dvh">
-	<aside class="flex flex-col gap-8 min-w-80 items-center border-r p-8 text-center bg-gray-100">
+	<aside
+		class="flex flex-col gap-8 min-h-dvh min-w-80 items-center border-r p-8 text-center bg-gray-100"
+	>
 		<div class="flex flex-col items-center">
 			<img
 				src="picture.jpg"
