@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex min-h-dvh">
-	<aside class="flex flex-col gap-8 w-80 items-center border-r p-8 text-center bg-gray-100">
+	<aside class="flex flex-col gap-8 min-w-80 items-center border-r p-8 text-center bg-gray-100">
 		<div class="flex flex-col items-center">
 			<img
 				src="picture.jpg"
@@ -14,7 +14,7 @@
 			<h2>Desenvolvedor Web</h2>
 		</div>
 
-		<p class=" font-light">
+		<p class="font-light max-w-72">
 			Desenvolvedor na Luby Software, escrevendo sobre desenvolvimento no geral, com foco em web.
 		</p>
 
@@ -27,7 +27,7 @@
 		</nav>
 	</aside>
 
-	<main>
+	<main class="w-full">
 		<slot />
 	</main>
 </div>
@@ -39,11 +39,3 @@
 		content="Desenvolvedor na Luby Software, escrevendo sobre desenvolvimento no geral, com foco em web."
 	/>
 </svelte:head>
-
-<style>
-	.pixel {
-		overflow-clip-margin: unset;
-		overflow: visible;
-		clip-path: circle();
-	}
-</style>
