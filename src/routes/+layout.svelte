@@ -12,7 +12,7 @@
 				class="w-24 h-24 mb-4 object-cover pixel"
 				alt="Uma foto minha (Emanuel Santos)"
 			/>
-			<h2 class="p-0 m-0">Emanuel Santos</h2>
+			<h1 class="p-0 m-0">Emanuel Santos</h1>
 			<h3 class="p-0 m-0 text-lg">Desenvolvedor Web</h3>
 		</div>
 
