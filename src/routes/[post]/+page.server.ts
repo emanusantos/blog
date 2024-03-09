@@ -6,8 +6,6 @@ export function load({ params }) {
 
 	const htmlPost = markdownToHtml(post.content);
 
-	console.log({ htmlPost });
-
 	return {
 		post,
 		htmlPost

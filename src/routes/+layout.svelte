@@ -2,9 +2,9 @@
 	import '../app.css';
 </script>
 
-<div class="flex min-h-dvh">
+<div class="flex h-dvh">
 	<aside
-		class="flex flex-col gap-8 min-h-dvh min-w-80 items-center border-r p-8 text-center bg-gray-100"
+		class="flex flex-col gap-8 h-dvh min-w-80 items-center border-r p-8 text-center bg-gray-100 overflow-hidden"
 	>
 		<div class="flex flex-col items-center">
 			<img
@@ -12,24 +12,24 @@
 				class="w-24 h-24 mb-4 object-cover pixel"
 				alt="Uma foto minha (Emanuel Santos)"
 			/>
-			<h1>Emanuel Santos</h1>
-			<h2>Desenvolvedor Web</h2>
+			<h2 class="p-0 m-0">Emanuel Santos</h2>
+			<h3 class="p-0 m-0 text-lg">Desenvolvedor Web</h3>
 		</div>
 
-		<p class="font-light max-w-72">
+		<p class="p-0 m-0 font-light text-lg max-w-72">
 			Desenvolvedor na Luby Software, escrevendo sobre desenvolvimento no geral, com foco em web.
 		</p>
 
 		<nav class="mt-8">
 			<ul>
 				<li>
-					<a href="/">Início</a>
+					<a class="text-lg" href="/">Início</a>
 				</li>
 			</ul>
 		</nav>
 	</aside>
 
-	<main class="w-full">
+	<main class="w-full overflow-y-scroll">
 		<slot />
 	</main>
 </div>
