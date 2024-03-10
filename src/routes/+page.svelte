@@ -9,6 +9,6 @@
 		slug={post.slug}
 		title={post.frontmatter.title}
 		description={post.frontmatter.description}
-		image={post.frontmatter.image}
+		date={post.frontmatter.date}
 	/>
 {/each}

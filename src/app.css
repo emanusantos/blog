@@ -7,6 +7,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Lato, sans-serif;
+	color: #2d2d2d;
+}
+
+a {
+	--highlight: #232bdd;
 }
 
 h1 {
@@ -67,6 +72,17 @@ blockquote {
 hr {
 	border: 1px solid var(--borders);
 	margin: 3rem auto;
+}
+
+a {
+	border-bottom: 1px solid var(--highlight);
+	color: var(--highlight);
+	text-decoration: none;
+	transition: opacity 0.5s;
+
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 .pixel {

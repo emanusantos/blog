@@ -4,7 +4,7 @@
 	let sidebar: HTMLElement;
 
 	function handleClickOutside(event: MouseEvent) {
-		if (sidebar && !sidebar.contains(event.target!)) {
+		if (event.target instanceof HTMLElement && sidebar && !sidebar.contains(event.target!)) {
 			isSidebarOpen.set(false);
 		}
 	}
@@ -28,11 +28,11 @@
 				alt="Uma foto minha (Emanuel Santos)"
 			/>
 			<h1 class="p-0 m-0">Emanuel Santos</h1>
-			<h3 class="p-0 m-0">Desenvolvedor Web</h3>
 		</div>
 
 		<p class="p-0 m-0 font-light text-md max-w-72 lg:text-sm">
-			Desenvolvedor na Luby Software, escrevendo sobre desenvolvimento no geral, com foco em web.
+			Engenheiro de Software na <a href="https://www.luby.com.br" target="_blank">Luby</a>,
+			escrevendo sobre desenvolvimento no geral, com foco em web.
 		</p>
 
 		<nav class="mt-8">
