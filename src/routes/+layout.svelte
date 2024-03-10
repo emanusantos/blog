@@ -1,7 +1,11 @@
 <script>
+	import { navigating } from '$app/stores';
 	import Sidebar from '$lib/components/Sidebar.svelte';
 	import Topbar from '$lib/components/Topbar.svelte';
+	import { isSidebarOpen } from '$lib/writables/sidebar';
 	import '../app.css';
+
+	$: if ($navigating) isSidebarOpen.set(false);
 </script>
 
 <Topbar />

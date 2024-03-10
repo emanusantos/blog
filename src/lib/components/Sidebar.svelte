@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Github from '$lib/icons/Github.svelte';
 	import { isSidebarOpen } from '$lib/writables/sidebar';
 	import { linear, quintOut } from 'svelte/easing';
 	import { slide } from 'svelte/transition';
@@ -45,6 +46,14 @@
 					</li>
 				</ul>
 			</nav>
+
+			<footer class="mt-auto flex justify-center items-center">
+				<a class="border-none" href="https://github.com/emanusantos" target="_blank">
+					<div class="w-8 h-8 flex justify-center items-center">
+						<Github />
+					</div>
+				</a>
+			</footer>
 		</aside>
 	</div>
 {/key}
