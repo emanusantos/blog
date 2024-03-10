@@ -87,6 +87,6 @@ a {
 
 .pixel {
 	overflow-clip-margin: unset;
-	overflow: visible;
+	overflow: hidden;
 	clip-path: circle();
 }

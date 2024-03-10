@@ -8,6 +8,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>{data.post.frontmatter.title} - Emanuel Santos</title>
+	<meta name="description" content={data.post.frontmatter.description} />
+</svelte:head>
+
 <main class="px-28 py-8 lg:px-8 lg:py-4">
 	<header>
 		<button on:click={handleGoBack}>
