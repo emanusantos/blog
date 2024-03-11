@@ -11,7 +11,7 @@
 <svelte:head>
 	<title>{data.post.frontmatter.title} - Emanuel Santos</title>
 	<meta name="description" content={data.post.frontmatter.description} />
-	<meta property="og:title" content={data.post.frontmatter.title} />
+	<meta property="og:title" content={`${data.post.frontmatter.title} - Emanuel Santos`} />
 	<meta property="og:description" content={data.post.frontmatter.description} />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content={`https://emanu.dev/${data.post.slug}`} />
