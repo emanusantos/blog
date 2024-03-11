@@ -11,6 +11,17 @@
 <svelte:head>
 	<title>{data.post.frontmatter.title} - Emanuel Santos</title>
 	<meta name="description" content={data.post.frontmatter.description} />
+	<meta property="og:title" content={data.post.frontmatter.title} />
+	<meta property="og:description" content={data.post.frontmatter.description} />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content={`https://emanu.dev/${data.post.slug}`} />
+	<meta property="og:article:published_time" content={data.post.date.toISOString()} />
+	<meta property="og:article:author" content="Emanuel Santos" />
+	<meta property="og:article:section" content="Tecnologia" />
+	<meta property="og:article:tag" content="desenvolvimento" />
+	<meta property="og:article:tag" content="programação" />
+	<meta property="og:article:tag" content="javascript" />
+	<meta property="og:article:tag" content="front-end" />
 </svelte:head>
 
 <main class="px-28 py-8 lg:px-8 lg:py-4">
