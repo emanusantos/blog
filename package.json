@@ -10,7 +10,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"postbuild": "npx svelte-sitemap --domain https://emanu.dev"
+		"postbuild": "npx svelte-sitemap --out-dir .vercel/output/static --domain https://emanu.dev"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.1",
