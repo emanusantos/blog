@@ -1,5 +1,6 @@
 <script>
 	import { navigating } from '$app/stores';
+	import Analytics from '$lib/components/Analytics.svelte';
 	import Sidebar from '$lib/components/Sidebar.svelte';
 	import Topbar from '$lib/components/Topbar.svelte';
 	import { isSidebarOpen } from '$lib/writables/sidebar';
@@ -7,6 +8,8 @@
 
 	$: if ($navigating) isSidebarOpen.set(false);
 </script>
+
+<Analytics />
 
 <Topbar />
 
